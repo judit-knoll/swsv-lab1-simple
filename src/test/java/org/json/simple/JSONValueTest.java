@@ -210,7 +210,7 @@ public class JSONValueTest extends TestCase {
 		assertEquals("null", JSONValue.toJSONString((Object[])null));
 		assertEquals("[]", JSONValue.toJSONString(new Object[0]));
 		assertEquals("[\"Hello\"]", JSONValue.toJSONString(new Object[] { "Hello" }));
-		assertEquals("[\"Hello\",12,[1,2,3]]", JSONValue.toJSONString(new Object[] { "Hello", new Integer(12), new int[] { 1, 2, 3 } }));
+		assertEquals("[\"Hello\",12,[1,2,3]]", JSONValue.toJSONString(new Object[] { "Hello", 12, new int[] { 1, 2, 3 } }));
 		
 		StringWriter writer;
 		
